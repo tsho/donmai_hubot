@@ -8,9 +8,10 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
-module.exports = (robot) ->
-          robot.respond /どんまい$/i, (msg) ->
-                    msg.send "╭( ･ㅂ･)و ̑̑ どんまい！"
+robot.respond /今井くんどんまい$/i, (msg) ->
+        msg.send "╭( ･ㅂ･)و ̑̑ どんまい！ :imai:"
+robot.respond /どんまい$/i, (msg) ->
+        msg.send "╭( ･ㅂ･)و ̑̑ どんまい！"
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
