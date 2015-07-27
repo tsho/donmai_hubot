@@ -7,11 +7,13 @@
 #   Uncomment the ones you want to try and experiment with.
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
+module.exports = (robot) ->
+  robot.hear /今井くんどんまい$/i, (msg) ->
+　  msg.send "╭( ･ㅂ･)و ̑̑ どんまい！ :imai:"
 
-robot.respond /今井くんどんまい$/i, (msg) ->
-        msg.send "╭( ･ㅂ･)و ̑̑ どんまい！ :imai:"
-robot.respond /どんまい$/i, (msg) ->
-        msg.send "╭( ･ㅂ･)و ̑̑ どんまい！"
+  robot.hear /どんまい$/i, (msg) ->
+    msg.send "╭( ･ㅂ･)و ̑̑ どんまい！"
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
